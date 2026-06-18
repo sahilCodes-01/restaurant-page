@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  background-color: rgba(201, 101, 8, 0.856);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+#home-btn,
+#menu-btn,
+#about-btn {
+  padding: 7px 26px;
+  border-radius: 5px;
+  border: none;
+  background-color: #a34f19;
+  color: white;
+}
+.active,
+.btn:hover {
+  cursor: pointer;
+  outline: 2px solid rgb(233, 165, 64);
+}
+
+.home-section {
+  position: relative;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://static.vecteezy.com/system/resources/thumbnails/001/959/920/small_2x/blurred-busy-restaurant-background-free-photo.JPG");
+
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.head-1 {
+  grid-area: 1 / 1 / 2 / 3;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  color: #fd7404;
+  text-shadow: 2px 2px 4px rgba(117, 86, 0, 0.808);
+}
+
+.img-1 {
+  width: 300px;
+  border-radius: 12px;
+  grid-area: 2 / 2 / 3 / 2;
+  position: relative;
+  left: 157px;
+  top: 20px;
+}
+
+.desc-div {
+  grid-area: 2 / 1 / 2 / 2;
+  position: relative;
+  top: 89px;
+  gap: 10px;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  width: 35vw;
+  left: 90px;
+  color: #ec610a;
+  font-size: 14px;
+}
+
+.para-1 {
+  font-size: 17px;
+  color: rgb(241, 144, 64);
+
+  font-weight: bold;
+}
+
+.img-2 {
+  width: 300px;
+  border-radius: 12px;
+  position: relative;
+  top: 80px;
+  left: 70px;
+  margin-bottom: 70px;
+}
+
+.experience-div {
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  top: 115px;
+  position: relative;
+  height: 50vh;
+  max-width: 41vw;
+  color: #d47e0e;
+}
+
+.exp-head {
+  color: rgb(241, 144, 64);
+  font-weight: bold;
+}
+
+.menu-section-div {
+  background-color: #2b1d12;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 35px;
+}
+
+.appetizer-head {
+  /* position: relative;
+  left: 37px; */
+  display: flex;
+  flex-direction: column;
+  max-width: 41vw;
+}
+
+.main-section {
+  max-width: 36vw;
+}
+
+.drink-section {
+  margin-bottom: 35px;
+  max-width: 37vw;
+}
+
+.title-head {
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgb(255 94 0 / 70%);
+}
+
+.menu-content-div {
+  display: grid;
+  border-bottom-style: outset;
+  width: 35vw;
+  row-gap: 10px;
+  margin-bottom: 7px;
+}
+
+.menu-head {
+  margin-top: 15px;
+  text-shadow: 2px 2px 4px rgba(255, 7, 7, 0.7);
+}
+
+.about-div {
+  background-color: #8a3805;
+  height: 100vh;
+  color: white;
+}
+
+.about-content-div {
+  max-width: 38vw;
+}
+
+.about-head {
+  padding: 26px 0 15px 45px;
+  color: rgb(212, 212, 123);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.about-content-div > p {
+  padding: 0 0 18px 45px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(230, 143, 29);
+}
+
+.about-address {
+  max-width: 10vw;
+  padding: 15px 0 15px 45px;
+  font-weight: 600;
+  font-size: 17px;
+  color: rgba(247, 149, 58, 0.87);
+}
